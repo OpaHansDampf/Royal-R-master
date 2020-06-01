@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="main.js" async></script>
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div class="topbar">
+			<div class="float_right2">
+				<span id="top_weather"><span id="weatherIcon"><i class="fas fa-circle-notch fa-spin fa-sm"></i></span></span>
+				<span id="top_signal"><span id="signalIcon"><i class="fad fa-fw fa-signal"></i></span></span>				
+				<span id="top_simcard"><i class="fal fa-fw fa-sim-card fa-rotate-270"></i></span>
+				<span id="top_battery"><span id="batteryIcon"><i class="fas fa-circle-notch fa-spin fa-sm"></i></span></span>				
+			</div>
+		</div>
+		<div id="time"></div>
+		<div id="date"></div>
+
+		<div id="icon_phone" class="icons" onclick="phoneClicked()"></div>
+		<div id="icon_contacts" class="icons" onclick="contactsClicked()"></div>
+		<div id="icon_sms" class="icons" onclick="smsClicked()"></div>
+		<div id="icon_email" class="icons" onclick="emailClicked()"></div>
+
+		<div id="icon_dispatches" class="icons" onclick="dispatchesClicked()"></div>
+		<div id="icon_settings" class="icons" onclick="settingsClicked()"></div>
+		<div id="icon_power" class="icons" onclick="powerClicked()"></div>
+
+		<div id="icon_switcher" class="icons" onclick="switcherClicked()"></div>
+		<div id="icon_dating" class="icons" onclick="datingClicked()"></div>
+		<div id="icon_rugelmaps" class="icons" onclick="rugelmapsClicked()"></div>
+		<div id="icon_gps" class="icons" onclick="gpsClicked()"></div>
+
+		<div id="icon_lifeinvader" class="icons" onclick="lifeinvaderClicked()"></div>
+		
+		<div id="icon_bank" class="icons" onclick="bankClicked()"></div>
+		<div id="icon_news" class="icons" onclick="newsClicked()"></div>
+		<div id="icon_gesetze" class="icons" onclick="gesetzeClicked()"></div>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script>
+			window.onload = function(){
+				document.getElementById("icon_phone").style.opacity = 1;
+				document.getElementById("icon_contacts").style.opacity = 1;
+				document.getElementById("icon_sms").style.opacity = 1;
+				document.getElementById("icon_email").style.opacity = .45;
+
+				document.getElementById("icon_dispatches").style.opacity = 1;
+				document.getElementById("icon_settings").style.opacity = 1;
+
+				document.getElementById("icon_switcher").style.opacity = .45;
+				document.getElementById("icon_dating").style.opacity = .45;
+				document.getElementById("icon_rugelmaps").style.opacity = .45;
+				document.getElementById("icon_gps").style.opacity = 1;
+
+				document.getElementById("icon_lifeinvader").style.opacity = .45;
+
+				document.getElementById("icon_bank").style.opacity = 1;
+				document.getElementById("icon_news").style.opacity = .45;
+				document.getElementById("icon_gesetze").style.opacity = .45;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="receivecall.js" async></script>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" type="text/css" href="receivecall.css">
+	</head>
+	<script>
+		var audio = new Audio('ringtone.ogg');
+		audio.play();
+		audio.loop = true;
+	</script>
+	<audio controls loop id="ringtone">
+		<source src="ringtone.ogg" type="audio/ogg">
+	</audio>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+
+		<form>
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-phone"></i> Neuer Anruf!</h5>
+			<div class="container-fluid">
+				<div class="text-center font-weight-bold text-white"><u><div id="isRinging"></div></u></div>
+				<div class="input-group mb-2 mt-3">
+					<div class="input-group-prepend">
+						<div class="input-group-text"><i class="fa fa-fw fa-user"></i></div>
+					</div>
+					<input class="form-control form-control-sm" id="callFrom" type="text" value="" readonly>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-4"><div class="quick-alo-ph-img-circle"></div></div>
+				</div>
+				<div class="row mt-5 justify-content-center">
+					<div class="col-4"><button type="button" class="btn btn-success p-3" onclick="buttoncallAccept()"><i class="fa fa-fw fa-phone"></i></button></div>
+					<div class="col-4"><button type="button" class="btn btn-danger p-3" onclick="buttoncallRejected()"><i class="fa fa-fw fa-phone-slash"></i></button></div>
+				</div>
+			</div>
+		</form>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script>
+			var url = new URL(window.location.href);
+			var test = parseInt(url.searchParams.get("leitstelle"));
+			if(test == 1) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById('bgimg').style.content='url(bg-lspd.jpg)';
+				document.getElementById("isRinging").innerHTML = "Eingehender Notruf!";
+			}
+			if(test == 2) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById('bgimg').style.content='url(bg-medic.jpg)';
+				document.getElementById("isRinging").innerHTML = "Eingehender Notruf!";
+			}
+			if(test == 3) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById('bgimg').style.content='url(bg-acls.jpg)';
+			}
+			if(test == 4) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById('bgimg').style.content='url(bg-justiz.jpg)';
+			}
+			if(test == 5) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById('bgimg').style.content='url(bg-sonstiges.jpg)';
+			}
+			if(test == 0) {
+				var phonenumber = url.searchParams.get("phonenumber");
+				document.getElementById("isRinging").innerHTML = "Ruft an ...";
+			}
+			document.getElementById("callFrom").value = phonenumber;
+		</script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

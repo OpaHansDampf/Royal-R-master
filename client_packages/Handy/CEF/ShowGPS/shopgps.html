@@ -1,0 +1,36 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="shopgps.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+		
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-map-marker-alt"></i> Standort</h5>
+			<div class="container-fluid">
+				<div class="form-group">
+					<div class="input-group mb-2 mt-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text"><i class="fa fa-fw fa-map-marker-alt"></i></div>
+						</div>
+						<input type="text" class="form-control form-control-sm" id="name" value="" required readonly>
+					</div>
+				</div>
+				<div class="form-row mt-3">
+					<div class="col-6"><button type="button" class="btn btn-danger btn-block p-2 shadow-sm" onclick="buttonDeleteClicked()"><i class="fa fa-fw fa-trash"></i></button></div>
+					<div class="col-6"><button type="button" class="btn btn-info btn-block p-2 shadow-sm" onclick="buttonGpsClicked()"><i class="fa fa-map-pin"></i></button></div>
+				</div>
+			</div>
+		</form>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="shopgps.js"></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

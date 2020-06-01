@@ -1,0 +1,48 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="addcontacts.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-user-plus"></i> Kontakt speichern</h5>
+			<div class="container-fluid">
+				<div class="form-group">
+					<div class="input-group mb-2 mt-3">
+						<div class="input-group-prepend">
+							<div class="input-group-text"><i class="fa fa-fw fa-user"></i></div>
+						</div>
+						<input class="form-control form-control-sm" id="name" type="text" value="" required>
+					</div>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text"><i class="fa fa-fw fa-phone"></i></div>
+						</div>
+						<input class="form-control form-control-sm" id="nummer" type="text" value="" required>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-4">
+					<button value="submit" class="btn btn-success btn-block p-3" onclick="buttonSaveClicked()"><i class="fa fa-fw fa-save"></i></button>
+				</div>
+			</div>
+		</form>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="addcontacts.js"></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script>
+			var url = new URL(window.location.href);
+			var number = url.searchParams.get("number");
+			document.getElementById("nummer").value = number;
+		</script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

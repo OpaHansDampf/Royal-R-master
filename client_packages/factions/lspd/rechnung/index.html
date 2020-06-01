@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="custom.css">
+	</head>
+<body>
+	<div class="system">
+		</div>
+		<img src="rechnung.png">
+	</div>
+	<div class="input-group">
+	  <input type="number" min="0" max="9999999999" id="input1" class="form-control" aria-label="Betrag">
+	  <div class="input-group-append">
+		<span class="input-group-text">$</span>
+	  </div>
+	  <div class="input-text">
+		<div class="input-group-prepend">
+			<span class="input-group-text">Grund</span>
+		</div>
+		<textarea class="form-control" id="input2" aria-label="Bußgeldgrund"></textarea>
+		</div>	
+		<div class="button-send">
+				<div class="button-send"><button type="button" class="btn btn-success" onclick="buttonSend()">Bußgeld ausstellen<i></i></button></div>
+		</div>
+		<div class="button-cancle">
+				<div class="button-cancle"><button type="button" class="btn btn-danger" onclick="buttonCancel()">abbrechen<i></i></button></div>
+		</div>
+</body>
+<script>
+	var trigger = '';
+	var num = false;
+	var split = false;
+
+	function setSplit(sp) {
+		split = sp;
+	}
+
+	function setNum(np) {
+		num = np;
+	}
+
+	function setTrigger(name) {
+		trigger = name;
+	}
+
+	function buttonSend(){
+		if (document.getElementById("input1").value === '') return;
+		if (!isNaN(document.getElementById("input1").value)) return;
+		mp.trigger("sendInputTicket", trigger, document.getElementById("input1").value);
+	}
+	window.addEventListener("keydown", function (event) {
+		var key = event.keyCode;
+		if (key == 13) {
+		if (document.getElementById("input1").value === '') return;
+
+		if (num === true) {
+			if (!isNaN(document.getElementById("input1").value)) return;
+		}
+
+		mp.trigger("sendInputTicket", trigger, document.getElementById("input1").value);
+		}
+
+		if(key == 27 || key == 8) {
+		mp.trigger("closeInputTicket");
+		}
+	});
+</script>
+</html>

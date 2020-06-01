@@ -1,0 +1,28 @@
+body {
+	background-color: transparent;
+}
+
+.container {
+	margin-top: 200px;
+}
+
+.progress {
+	height: 40px;
+	width: 50%;
+	font-weight: bold;
+	font-size: 1rem;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.progress-bar {
+	min-width: 1em;
+	width: 0%;
+	transition: width .3s ease;
+}
+
+#text-currentTask {
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 0px 0px 10px rgba(0,0,0,0.62);
+}

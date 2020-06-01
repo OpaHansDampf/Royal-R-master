@@ -1,0 +1,56 @@
+html, body {
+  min-height: 100%;
+  background-color: rgba(241, 241, 241, .9) !important;
+}
+
+body {
+  background: transparent;
+  background-size: cover;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.pad {
+  width: 333px;
+  transform: scale(.77);
+  height: 357px;
+  margin-left: -42px !important;
+  margin-top: -81px;
+}
+
+.pad .phoneString {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #a9a9a9;
+  margin-top: 40px;
+}
+
+.pad .phoneString input {
+  background-color: transparent;
+  width: 60%;
+  margin-left: 20%;
+  height: 150px;
+  border: none;
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+
+}
+.pad .phoneString input:focus {
+  outline: none;
+}
+
+.pad .row-number {
+  background-color: rgba(193, 193, 193, .6);
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #e2e2e2;
+  line-height: 1.3rem;
+  padding-top: 15px;
+}
+
+.pad .row-alpha {
+  font-size: 10px;
+}

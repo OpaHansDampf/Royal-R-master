@@ -1,0 +1,37 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="settings.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+		
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-cogs"></i> Einstellungen</h5>
+			<div class="container-fluid container-black">
+				<div class="form-group">
+					<span class="font-weight-bold"><u>Eigene Rufnummer</u></span>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text"><i class="fa fa-fw fa-phone"></i></div>
+						</div>
+						<input type="text" class="form-control form-control-sm" id="nummer" value="" readonly>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script>
+			var url = new URL(window.location.href);
+			var number = url.searchParams.get("phoneNumber");
+			document.getElementById("nummer").value = number;
+		</script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

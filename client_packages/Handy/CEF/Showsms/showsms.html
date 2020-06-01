@@ -1,0 +1,36 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="showsms.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-sms"></i> SMS-Verlauf</h5>
+			<div class="container-fluid">
+				<div class="wrapper-contacts" id="wrapper-contacts">
+					<span id="smsBottom"></span>
+				</div>
+				<input class="form-control form-control-sm" id="input" type="text" value="">
+			</div>
+		</form>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="showsms.js"></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script> 
+			window.addEventListener("keydown", function (event) {
+				var key = event.keyCode;
+				if (key == 13) { 
+					mp.trigger("sendSMS",document.getElementById("input").value);
+				}
+			});
+		</script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="dialpad.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-phone"></i> Anrufen</h5>
+			<div class="container-fluid">
+				<div class="pad">
+					<div class="dial-pad">
+						<div class="contact"></div>
+						<div class="phoneString">
+							<input id="number" type="text" value="" disabled>
+						</div>
+						<div class="container-fluid mt-1">
+							<div class="form-row">
+								<div class="col-4 row-number" name="1" onclick="playAudio('dtmf/dtmf-1.mp3')">1<div class="row-alpha"><i class="far fa-fw fa-voicemail"></i></div></div>
+								<div class="col-4 row-number" name="2" onclick="playAudio('dtmf/dtmf-2.mp3')">2<div class="row-alpha">ABC</div></div>
+								<div class="col-4 row-number" name="3" onclick="playAudio('dtmf/dtmf-3.mp3')">3<div class="row-alpha">DEF</div></div>
+								<div class="col-4 row-number" name="4" onclick="playAudio('dtmf/dtmf-4.mp3')">4<div class="row-alpha">GHI</div></div>
+								<div class="col-4 row-number" name="5" onclick="playAudio('dtmf/dtmf-5.mp3')">5<div class="row-alpha">JKL</div></div>
+								<div class="col-4 row-number" name="6" onclick="playAudio('dtmf/dtmf-6.mp3')">6<div class="row-alpha">MNO</div></div>
+								<div class="col-4 row-number" name="7" onclick="playAudio('dtmf/dtmf-7.mp3')">7<div class="row-alpha">PQRS</div></div>
+								<div class="col-4 row-number" name="8" onclick="playAudio('dtmf/dtmf-8.mp3')">8<div class="row-alpha">TUV</div></div>
+								<div class="col-4 row-number" name="9" onclick="playAudio('dtmf/dtmf-9.mp3')">9<div class="row-alpha">WXYZ</div></div>
+								<div class="col-4 row-number" name="*" onclick="playAudio('dtmf/dtmf-star.mp3')">*<div class="row-alpha">&ensp;</div></div>
+								<div class="col-4 row-number" name="0" onclick="playAudio('dtmf/dtmf-0.mp3')">0<div class="row-alpha">&ensp;</div></div>
+								<div class="col-4 row-number" name="#" onclick="playAudio('dtmf/dtmf-hash.mp3')">#<div class="row-alpha">&ensp;</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-row justify-content-center">
+					<div class="col-4"><button type="button" class="btn btn-info btn-block p-3 shadow-sm" onclick="buttonaddClicked()"><i class="fa fa-fw fa-user-plus"></i></button></div>
+					<div class="col-4"><button type="button" class="btn btn-success btn-block p-3 shadow-sm" onclick="buttoncallClicked()"><i class="fa fa-fw fa-phone"></i></button></div>
+					<div class="col-4"><button type="button" class="btn btn-danger btn-block p-3 shadow-sm" onclick="buttondeleteClicked()"><i class="fa fa-fw fa-backspace"></i></button></div>
+				</div>
+			</div>
+		</div>
+
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="dialpad.js"></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>
+
+<audio id="sound1" src="dtmf/dtmf-1.mp3"></audio>
+<audio id="sound2" src="dtmf/dtmf-2.mp3"></audio>
+<audio id="sound3" src="dtmf/dtmf-3.mp3"></audio>
+<audio id="sound4" src="dtmf/dtmf-4.mp3"></audio>
+<audio id="sound5" src="dtmf/dtmf-5.mp3"></audio>
+<audio id="sound6" src="dtmf/dtmf-6.mp3"></audio>
+<audio id="sound7" src="dtmf/dtmf-7.mp3"></audio>
+<audio id="sound8" src="dtmf/dtmf-8.mp3"></audio>
+<audio id="sound9" src="dtmf/dtmf-9.mp3"></audio>
+<audio id="soundstar" src="dtmf/dtmf-star.mp3"></audio>
+<audio id="sound0" src="dtmf/dtmf-0.mp3"></audio>
+<audio id="soundhash" src="dtmf/dtmf-hash.mp3"></audio>
+<script> 
+	function playAudio(url) {
+ 		var a = new Audio(url);
+  		a.play();
+	}
+
+	window.addEventListener("keydown", function (event) {
+		var key = event.keyCode;
+		if (key == 96) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "0"); document.getElementById('sound0').play(); }
+		if (key == 97) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "1"); document.getElementById('sound1').play(); }
+		if (key == 98) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "2"); document.getElementById('sound2').play(); }
+		if (key == 99) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "3"); document.getElementById('sound3').play(); }
+		if (key == 100) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "4"); document.getElementById('sound4').play(); }
+		if (key == 101) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "5"); document.getElementById('sound5').play(); }
+		if (key == 102) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "6"); document.getElementById('sound6').play(); }
+		if (key == 103) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "7"); document.getElementById('sound7').play(); }
+		if (key == 104) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "8"); document.getElementById('sound8').play(); }
+		if (key == 105) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "9"); document.getElementById('sound9').play(); }
+		if (key == 106) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "*"); document.getElementById('soundstar').play(); }
+		if (key == 191) { var currentValue = $('.phoneString input').val(); $('.phoneString input').val(currentValue + "#"); document.getElementById('soundhash').play(); }
+		if (key == 8) { var currentValue = $('.phoneString input').val(); var newValue = currentValue.substring(0, currentValue.length - 1); $('.phoneString input').val(newValue); }
+		if (key == 13) { var number = document.getElementById("number").value; location.href = "../Phonecalling/phonecalling.html"; mp.trigger("client:Handy:onCall", number); }
+	});
+</script>

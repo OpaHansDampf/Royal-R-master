@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="send.css">
+
+<div class="vertrag">
+    <img class="logo">
+    <div class="title1">Empfaenger</div>
+    <input id="empf" type="text">
+
+    <div class="box1"id="email">
+    <div class="title2">Text</div>
+    <textarea class="input1" id="text"></textarea> 	
+ 
+    </div>
+
+    <div class="button" onclick="sendMail()">Senden</div>
+</div>
+<script>
+    function sendMail(){
+	mp.trigger("client:email:sendmail",document.getElementById("empf").value,document.getElementById("text").value);	
+}
+function setText(text) {
+	document.getElementById("email").innerHTML = text;
+}
+</script>

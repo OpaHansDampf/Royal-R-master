@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="style.css" />
+
+<div class="number-input">
+    <div class="main">
+        <div class="back">
+
+            <div class="top">+</div>
+
+            <div class="frame">
+
+                <div class="lights">
+                    <div class="light1"></div>
+                    <div class="light2"></div>
+                    <div class="light3"></div>
+                </div>
+
+                <ul class="nums">
+                    <li class="number" onclick="clickNum('1')">1</li>
+                    <li class="number" onclick="clickNum('2')">2</li>
+                    <li class="number" onclick="clickNum('3')">3</li>
+                    <li class="number" onclick="clickNum('4')">4</li>
+                    <li class="number" onclick="clickNum('5')">5</li>
+                    <li class="number" onclick="clickNum('6')">6</li>
+                    <li class="number" onclick="clickNum('7')">7</li>
+                    <li class="number" onclick="clickNum('8')">8</li>
+                    <li class="number" onclick="clickNum('9')">9</li>
+                    <li class="number">*</li>
+                    <li class="number" onclick="clickNum('0')">0</li>
+                    <li class="number">#</li>
+                </ul>
+
+                <input class="secret" type="password" min="0" max="9999999999" id="input1" onkeypress='validate(event)' oninput="validity.valid||(value='');">
+
+            </div>
+
+            <div class="bottom">+</div>
+
+        </div>
+    </div>
+</div>
+<audio id="click">
+    <source src="click.ogg" type="audio/ogg">
+  </audio>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    var trigger = '';
+    var num = false;
+    var split = false;
+
+    function setSplit(sp) {
+        split = sp;
+    }
+
+    function setNum(np) {
+        num = np;
+    }
+
+    function setTrigger(name) {
+        trigger = name;
+    }
+
+
+    window.addEventListener("keydown", function(event) {
+        var key = event.keyCode;
+        if (key == 13) {
+            if (document.getElementById("input1").value === '') return;
+
+            if (num === true) {
+                if (!isNaN(document.getElementById("input1").value)) return;
+            }
+
+            mp.trigger("sendInputHouse", trigger, document.getElementById("input1").value);
+        }
+
+        if (key == 27 || key == 8) {
+            mp.trigger("closeInputHouse");
+        }
+    });
+
+    setTimeout(function() {
+        document.getElementById('input1').focus();
+    }, 50)
+
+    function clickNum(number) {
+        let thisDocument = document.getElementById('input1')
+        thisDocument.value = thisDocument.value + number;
+        playClick();
+    }
+
+    function playClick() {
+        var audio = document.getElementById("click");
+        audio.play();
+        audio.volume = 0.2;
+    }
+
+    function validate(evt) {
+        var theEvent = evt || window.event;
+
+        // Handle paste
+        if (theEvent.type === 'paste') {
+            key = event.clipboardData.getData('text/plain');
+        } else {
+            // Handle key press
+            var key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode(key);
+        }
+        var regex = /[0-9]|\./;
+        if (!regex.test(key)) {
+            theEvent.returnValue = false;
+            if (theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+</script>

@@ -1,0 +1,44 @@
+<link href="css/input.css" rel="stylesheet">
+
+<div class="car" style="display:show">
+        <div class="box">
+            <span id="title2">Text einfügen</span>
+            <input id="text" type="text">
+        </div>
+</div>
+
+<script>
+  var trigger = '';
+  var num = false;
+  var split = false;
+
+  function setSplit(sp) {
+    split = sp;
+  }
+
+  function setNum(np) {
+    num = np;
+  }
+
+  function setTrigger(name) {
+    trigger = name;
+  }
+
+
+  window.addEventListener("keydown", function (event) {
+    var key = event.keyCode;
+    if (key == 13) {
+      if (document.getElementById("text").value === '') return;
+
+      if (num === true) {
+        if (!isNaN(document.getElementById("text").value)) return;
+      }
+
+      mp.trigger("sendInputText", trigger, document.getElementById("text").value);
+    }
+
+    if(key == 27 || key == 8) {
+      mp.trigger("closeInputText");
+    }
+  });
+</script>

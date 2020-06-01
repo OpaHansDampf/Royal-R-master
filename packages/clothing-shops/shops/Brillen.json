@@ -1,0 +1,80 @@
+{
+    "bannerSprite": {
+      "library": "shopui_title_lowendfashion2",
+      "texture": "shopui_title_lowendfashion2"
+    },
+    "shops": [
+      {
+        "x": -623.101,
+        "y": -232.869,
+        "z": 35.057
+      }
+    ],
+    "male": {
+      "clothes": {
+
+      },
+      "props": {
+        "1": [
+      { "name": "Sonnenbrille", 	"drawable": 2, 		"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 3, 		"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 4, 		"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 5, 		"texture": 0, 	"price": 100 },		
+      { "name": "Sonnenbrille", 	"drawable": 7, 		"texture": 0, 	"price": 100 },	
+      { "name": "Sonnenbrille", 	"drawable": 8, 		"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 9, 		"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 10, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 12, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 13, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 15, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 16, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 17, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 18, 	"texture": 0, 	"price": 100 },
+      { "name": "Lesebrille", 		"drawable": 19, 	"texture": 0, 	"price": 100 },
+      { "name": "Lesebrille", 		"drawable": 20, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 21, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 22, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 23, 	"texture": 0, 	"price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 24, 	"texture": 0, 	"price": 100 },
+      { "name": "Skibrille", 		"drawable": 25, 	"texture": 0, 	"price": 100 },
+      { "name": "Tauchermaske", 	"drawable": 26, 	"texture": 0, 	"price": 100 },
+      { "name": "Lesebrille", 		"drawable": 28, 	"texture": 0, 	"price": 100 },
+      { "name": "Lesebrille", 		"drawable": 29, 	"texture": 0, 	"price": 100 }
+        ]
+      }
+    },
+    "female": {
+      "clothes": {
+      },
+      "props": {
+        "1": [
+      { "name": "Sonnenbrille", 	"drawable": 1, 		"texture": 0, "price": 100 },      
+      { "name": "Sonnenbrille", 	"drawable": 2, 		"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 3, 		"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 4, 		"texture": 0, "price": 100 },	
+      { "name": "Sonnenbrille", 	"drawable": 6, 		"texture": 0, "price": 100 },	
+      { "name": "Sonnenbrille",		"drawable": 7, 		"texture": 0, "price": 100 },	
+      { "name": "Sonnenbrille", 	"drawable": 8, 		"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 9, 		"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 10,		"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 11, 	"texture": 0, "price": 100 },
+      { "name": "Lesebrille", 		"drawable": 14, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 16, 	"texture": 0, "price": 100 },
+      { "name": "Lesebrille", 		"drawable": 17, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 18, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 19, 	"texture": 0, "price": 100 },
+      { "name": "Lesebrille", 		"drawable": 20, 	"texture": 0, "price": 100 },
+      { "name": "Lesebrille", 		"drawable": 21, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 22, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 23, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 24, 	"texture": 0, "price": 100 },
+      { "name": "Sonnenbrille", 	"drawable": 25, 	"texture": 0, "price": 100 },
+      { "name": "Fliegerbrille", 	"drawable": 26, 	"texture": 0, "price": 100 },
+      { "name": "Skibrille", 		"drawable": 27, 	"texture": 0, "price": 100 },
+      { "name": "Tauchermaske", 	"drawable": 28, 	"texture": 0, "price": 100 }
+
+        ]
+      }
+    }
+  }
+  

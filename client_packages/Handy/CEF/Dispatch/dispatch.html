@@ -1,0 +1,29 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../_css-js/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../navbar.css">
+		<link rel="stylesheet" href="dispatch.css">
+	</head>
+	<body>
+		<div id="bgimg"></div>
+		<div id="topbar"></div>
+		
+		<form class="contact">
+			<h5 class="phone-header p-2"><i class="far fa-fw fa-bell-exclamation"></i> Dispatch</h5>
+			<div class="container-fluid">
+				<div class="mt-3">
+					<button type="button" class="btn btn-primary btn-block p-2 shadow-sm mt-2" value="lspd" onclick="sendDispatch('lspd')"><i class="fa fa-fw fa-walkie-talkie"></i> Polizei</button>
+					<button type="button" class="btn btn-danger btn-block p-2 shadow-sm" value="Medics" onclick="sendDispatch('Medics')"><i class="fa fa-fw fa-stethoscope"></i> Mediziner</button>
+					<button type="button" class="btn btn-warning btn-block p-2 shadow-sm" value="ACLS" onclick="sendDispatch('acls')"><i class="fa fa-fw fa-car-mechanic"></i> ACLS</button>
+				</div>
+			</div>
+		</form>
+		
+		<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+		<script src="dispatch.js"></script>
+		<script src="../_css-js/fontawesome.min.js"></script>
+		<script src="../topbar.js"></script>
+	</body>
+</html>

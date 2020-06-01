@@ -1,0 +1,65 @@
+<html lang="de"><head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="assets/css/sweetalert2.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/app.min.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- ================== END BASE CSS STYLE ================== -->
+</head>
+<body>
+	<div class="login-cover">
+		<div class="login-cover-image" style="background-image: url(assets/images/bg-summer.jpg)" data-id="login-cover-image"></div>
+		<div class="login-cover-bg"></div>
+	</div>
+	
+	<div id="page-container" class="fade show">
+		<div class="login login-v2 animated fadeIn">
+			<div class="login-header">
+				<div class="text-center">
+					<img src="assets/images/rr-logo.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="login-content">
+				<form  id="loginform" class="margin-bottom-0">
+					<div class="form-group m-b-20">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><i class="far fa-fw fa-user"></i></div>
+							</div>
+							<input type="text" id="loginName" class="form-control form-control-lg" placeholder="Benutzername aus dem CP" required>
+						</div>
+					</div>
+					<div class="form-group m-b-20">
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><i class="far fa-fw fa-lock"></i></div>
+							</div>
+							<input type="password" id="loginPass" class="form-control form-control-lg" placeholder="Passwort aus dem CP" required>
+						</div>
+					</div>					
+					<div class="login-buttons">
+						<button type="button" id="loginBtn" class="btn btn-secondary btn-block btn-lg" onclick="sendAccountInfo(0);"><i class="far fa-fw fa-sign-in"></i> Einloggen</button>
+					</div>
+					<div class="login-buttons">
+						<button type="button" id="loginBtn" class="btn btn-danger btn-block btn-lg" onclick="sendAccountInfo(1);"><i class="far fa-fw fa-sign-in"></i> Einloggen (Autologin aktivieren)</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="assets/js/sweetalert2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/fontawesome.min.js"></script>
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<!-- ================== END BASE JS ================== -->
+
+</body></html>

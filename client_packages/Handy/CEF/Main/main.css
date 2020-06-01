@@ -1,0 +1,135 @@
+@font-face {
+	font-family: clockfont;
+	src: url('../Poppins-Medium.ttf');
+}
+html, body {
+	-ms-user-select: None;
+ 	-moz-user-select: None;
+ 	-webkit-user-select: None;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: #00000000;
+}
+
+#time {
+	pointer-events: none;
+	z-index: 5;
+	background-color: #20202000;
+	color: #f3f3f3dd;
+	font-family: clockfont;
+	font-size: 35px;
+	position: absolute;
+	top: 9px;
+	left: 18px;
+}
+#date {
+	pointer-events: none;
+	z-index: 5;
+	background-color: #20202000;
+	color: #dddddddd;
+	font-family: clockfont;
+	font-size: 15px;
+	position: absolute;
+	top: 50px;
+	left: 18px;
+}
+.icons{
+	z-index: 10;
+	width: 55px;
+	position: absolute;
+	cursor:	pointer;
+}
+
+/*top: 430,365,300,235,170,105*/
+/*left: 16,73,130,188*/
+
+#icon_phone {
+	content: url(icons/phone.png);
+	top: 430px;
+	left: 16px;
+}
+
+#icon_contacts {
+	content: url(icons/contacts.png);
+	top: 430px;
+	left: 73px;
+}
+
+#icon_sms {
+	content: url(icons/sms.png);
+	top: 430px;
+	left: 130px;
+}
+
+#icon_email {
+	content: url(icons/email.png);
+	top: 430px;
+	left: 188px;
+}
+
+#icon_dispatches {
+	content: url(icons/dispatch.png);
+	top: 365px;
+	left: 16px;
+}
+
+#icon_settings {
+	content: url(icons/settings.png);
+	top: 365px;
+	left: 130px;
+}
+
+#icon_power {
+    content: url(icons/power-off.png);
+    top: 365px;
+	left: 188px;
+}
+
+#icon_switcher {
+	content: url(icons/switcher.png);
+	top: 170px;
+	left: 16px;
+}
+
+#icon_dating {
+	content: url(icons/dating-app.png);
+	top: 170px;
+	left: 73px;
+}
+
+#icon_rugelmaps {
+	content: url(icons/rugel-maps.png);
+	top: 170px;
+	left: 130px;
+}
+
+#icon_gps {
+	content: url(icons/gps-locations.png);
+	top: 170px;
+	left: 188px;
+}
+
+#icon_lifeinvader {
+	content: url(icons/lifeinvader.png);
+	top: 235px;
+	left: 16px;
+}
+
+#icon_bank {
+	content: url(icons/fleeca.png);
+	top: 105px;
+	left: 16px;
+}
+
+#icon_news {
+	content: url(icons/news.png);
+	top: 105px;
+	left: 130px;
+}
+
+#icon_gesetze {
+	content: url(icons/gesetze.png);
+	top: 105px;
+	left: 188px;
+}

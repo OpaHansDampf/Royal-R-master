@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="index.css">
+
+<div class="vertrag">
+    <img class="logo">
+    <div class="title1">Email</div>
+
+    <div class="box1"id="email">
+ 
+    </div>
+
+    <div class="button" onclick="acceptBank()">Gelesen</div>
+</div>
+<script>
+    function acceptBank(){
+	mp.trigger("client:email:gelesen");	
+}
+function setText(text) {
+	document.getElementById("email").innerHTML = text;
+}
+</script>

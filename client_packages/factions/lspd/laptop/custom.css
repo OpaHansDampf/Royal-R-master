@@ -1,0 +1,20 @@
+.system { }
+
+img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -426px;
+    margin-left: -672.5px;
+}
+
+.iframe {
+	height: 682px;
+	width: 1209px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -362px;
+	margin-left: -606px;
+	z-index: 999;
+}

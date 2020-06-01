@@ -1,0 +1,48 @@
+html, body {
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #00000000;
+}
+
+#handy {
+    z-index: 2;
+    content: url(phone.png);
+    pointer-events: none;
+    width: auto;
+    max-height:	550px;
+    position: absolute;
+    bottom: 31px;
+    right: 87px;
+}
+
+#content {
+    z-index: 0;
+    pointer-events: painted;
+    width: 258px;
+    height: 514px;
+    position: absolute;
+    bottom: 60px;
+    right: 95px;
+}
+
+#backbutton {
+    z-index: 10;
+    content: url(Main/icons/back-button.png);
+    width: 15px;
+    position: absolute;
+    bottom: 67px;
+    right: 241px;
+}
+
+#homebutton {
+    z-index: 10;
+    content: url(Main/icons/home-button.png);
+    width: 15px;
+    position: absolute;
+    bottom:	67px;
+    right: 191px;
+}

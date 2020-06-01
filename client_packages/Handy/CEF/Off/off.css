@@ -1,0 +1,26 @@
+@font-face {
+	font-family: clockfont;
+	src: url('../Poppins-Medium.ttf');
+}
+html, body {
+	-ms-user-select: None;
+ 	-moz-user-select: None;
+ 	-webkit-user-select: None;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: #00000000;
+}
+
+.icons{
+	z-index: 10;
+	width: 55px;
+	position: absolute;
+	cursor:	pointer;
+}
+
+#icon_phoneoff {
+	content: url(icons/power-on.png);
+	top: 365px;
+	left: 188px;
+}

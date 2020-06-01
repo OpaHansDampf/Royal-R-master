@@ -1,0 +1,68 @@
+.system {
+    background: transparent;
+ }
+
+ img {
+    position: fixed;
+    top: 63%;
+    left: 71%;
+    margin-top: -426px;
+    margin-left: -607.5px;
+}
+
+
+body {
+    background: transparent;
+}
+.iframe {
+    height: 760px;
+    width: 1210px;
+    position: fixed;
+    top: 46.4%;
+    left: 48.8%;
+    margin-top: -338px;
+    margin-left: -537px;
+    z-index: 999;
+}
+
+.input-group {
+    width: 334px;
+    position: fixed;
+    top: 84%;
+    left: 71%;
+    margin-top: -442px;
+    margin-left: -605.5px;
+}
+
+
+.input-text {
+    width: 340px;
+    position: fixed;
+    top: 91%;
+    left: 71%;
+    margin-top: -442px;
+    margin-left: -605.5px;
+}
+
+.button-send {
+    width: 1032px;
+    position: fixed;
+    top: 116%;
+    left: 71%;
+    margin-top: -442px;
+    margin-left: -605.5px;
+}
+.button-cancle {
+    width: 1032px;
+    position: fixed;
+    top: 116%;
+    left: 71%;
+    margin-top: -442px;
+    margin-left: -605.5px;
+}
+
+
+
+
+
+

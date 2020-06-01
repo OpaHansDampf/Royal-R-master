@@ -1,0 +1,193 @@
+@font-face {
+	font-family: clockfont;
+	src: url('../Poppins-Medium.ttf');
+}
+html, body {
+	-ms-user-select: None;
+ 	-moz-user-select: None;
+ 	-webkit-user-select: None;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	background-color: #00000000;
+}
+
+#time {
+	pointer-events: none;
+	z-index: 5;
+	background-color: #20202000;
+	color: #f3f3f3dd;
+	font-family: clockfont;
+	font-size: 35px;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	width: 240px;
+}
+#date {
+	pointer-events: none;
+	z-index: 5;
+	background-color: #20202000;
+	color: #dddddddd;
+	font-family: clockfont;
+	font-size: 15px;
+	position: absolute;
+	top: 65px;
+	left: 5px;
+	width: 240px;
+}
+.icons{
+	background-color: #00000080;
+	z-index: 10;
+	width: 45px;
+	height:	45px;
+	position: absolute;
+	cursor:	pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+#icon_1 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_2 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_3 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_4 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_5 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_6 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_7 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_8 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+
+#icon_9 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_10 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_11 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_12 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_13 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_14 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_15 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_16 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_17 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_18 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_19 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_20 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_21 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_22 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_23 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
+#icon_24 {
+	content: url(icons/1.png);
+	top: 435px;
+	left: 19px;
+}
+
